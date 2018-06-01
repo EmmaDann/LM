@@ -69,7 +69,7 @@
   \end{figure}
 \end{frame}
 
-\begin{frame}[label=current]{Modelling random hexamer binding}
+\begin{frame}{Modelling random hexamer binding}
   \vspace{-2cm}
   \begin{figure}
       \centering
@@ -84,99 +84,75 @@
   \item Difficult to determine exact genomic kmer abundance for BS converted genome
 \end{itemize}
 \end{frame}
-%
-% \begin{frame}{Modelling random hexamer binding}
-%   \begin{equation*}\label{eq: DeltaG}
-%   \frac{[pt]}{[t]} = [p]\exp\left(\beta\Delta G\right).
-%   \end{equation*}
-%   \begin{figure}
-%       \includegraphics[scale=0.25]{occupancy_ab_amp_bigLabels.png}
-%   \end{figure}
-% \end{frame}
-%
-% \begin{frame}{Frequent mismatches at primer binding position in BS seq data}
-%   \Wider{
-%   \begin{columns}
-%   \begin{column}{0.5\linewidth}
-%       \begin{figure}
-%           \centering
-%           \includegraphics[scale=0.2]{mismatch_per_position_abs_L1.pdf}
-%       \end{figure}
-%   \end{column}
-%   \begin{column}{0.45\linewidth}
-%   \begin{figure}
-%       \centering
-%       \includegraphics[scale=0.3, trim={0 5cm 0 0}, clip]{seqLogos_templ_ordBindingEvTempl.pdf}
-%   \end{figure}
-%   \end{column}
-%   \end{columns}
-%   }
-% \end{frame}
-%
-% \begin{frame}{Hexamer binding model 2.0: accounting for all binding events}
-%   \vspace{-0.4cm}
-%   \begin{figure}
-%       \centering
-%       \includegraphics[scale=0.3]{template_primer.png}
-%   \end{figure}
-%   \begin{equation*}
-%   p_i+t_j \rightleftarrows p_it_j,
-%   \end{equation*}
-%   where $p_it_j$ is the binding complex. In equilibrium conditions it is satisfied that:
-%   \begin{equation*}
-%   \frac{[p_it_j]}{[p_i][t_j]} = \exp\left(\beta\Delta G_{ij}\right).
-%   \end{equation*}
-%
-%   \onslide<2-3>{
-%   How to define coverage?
-%   \begin{equation*}
-%   C_j = \sum_i[p_it_j] = \boxed{T_j\frac{\sum_i[p_i]\exp\left(\beta\Delta G_{ij}\right)
-%   }{\left[1+\sum_i[p_i]\exp\left(\beta\Delta G_{ij}\right)\right]}}
-%   \end{equation*}
-%
-%   $T_j = t_j + C_j$ $\longrightarrow$ total abundance of template sequence ; \\ $[p_i]$ $\longrightarrow$ concentration of primers in the experiments. \\
-%   }
-%   \onslide<3>{
-%   \begin{center}
-%     \alert{\large{What about $\Delta G_{ij}$ ?}}
-%   \end{center}
-%   }
-% \end{frame}
-%
-%
-% \begin{frame}{Computing $\Delta G_{ij}$ from sequencing data}
-%   \Wider{
-%   \begin{equation*}
-%   \frac{[p_it_j]}{[p_i][t_j]} = \exp\left(\beta\Delta G_{ij}\right).
-%   \end{equation*}
-%   \begin{figure}
-%       \only<1>{\includegraphics[scale=0.47,page=12, trim={0 2cm 0 2cm}, clip]{counting-3.pdf}}
-%       \only<2>{\includegraphics[scale=0.47,page=13, trim={0 2cm 0 2cm}, clip]{counting-3.pdf}}
-%       \only<3-4>{\includegraphics[scale=0.47,page=14, trim={0 2cm 0 2cm}, clip]{counting-3.pdf}}
-%   \end{figure}
-%   \onslide<4>{
-%     \centering{\alert{\large{How to use this approach on bisulfite converted genome?}}}}
-%     }
-% \end{frame}
-%
-%
-% \begin{frame}{Prediction on BS-seq data}
-%   \vspace{-0.5cm}
-%   \begin{figure}
-%       \centering
-%       \includegraphics[scale=0.2]{bs_model.png}
-%   \end{figure}
-%   \begin{equation*}
-%   \begin{split}
-%        [p_i t] & = [b_1 p_i] + [b_2 p_i] + [b_3 p_i] ... \\
-%               %  & = [t]P(b_1|t)[p]\sum_i \exp\left(\frac{\Delta G_{1i}}{k_BT}\right) + [t]P(b_2|t)[p]\sum_i \exp\left(\frac{\Delta G_{2i}}{k_BT}\right) + [t]P(b_3|t)[p]\sum_i \exp\left(\frac{\Delta G_{3i}}{k_BT}\right) \\
-%                \onslide<2-4>{ & =[b_1][p_i]\exp\left(\beta\Delta G\right) + [b_2][p_i]\exp\left(\beta\Delta G\right) + ... \\}
-%                \onslide<3-4>{ & =[t][p_i]\sum_n \exp\left(\beta\Delta G\right) P(b_n|t) \\}
-%                \onslide<4>{ & =[t][p_i] \exp\left(\beta\Delta F\right) \\}
-%   \end{split}
-%   \end{equation*}
-% \end{frame}
-%
+
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+
+\section{From sequence binding to genomic coverage profiles}
+
+\begin{frame}{Does sequence binding explain genomic coverage profiles?}
+  \begin{center}
+    \textbf{Coverage fraction per sequence} \\
+    $\downarrow$ \\
+    \textbf{Coverage density per sequence} \\
+    $\frac{kmer\ coverage}{kmer\ abundance}$ \\
+    $\downarrow$ \\
+    \textbf{Predicted coverage per position} \\
+    sum of coverage densities for all sequences upstream 75 bp (read length)
+  \end{center}
+\end{frame}
+
+\begin{frame}{Does sequence binding explain genomic coverage profiles?}
+\vspace{-0.5cm}
+\Wider{
+\begin{columns}
+    \begin{column}{0.5\linewidth}
+      \begin{figure}
+        \includegraphics[scale=0.17]{highspear_celenoBS_smp1.pdf}
+      \end{figure}
+      \vspace{-0.7cm}
+      \begin{figure}
+        \includegraphics[scale=0.17]{highspear_celenoBS_smp2.pdf}
+      \end{figure}
+    \end{column}
+    \begin{column}{0.5\linewidth}
+      \begin{figure}
+        \includegraphics[scale=0.17]{highspear_celenoBS_smp3.pdf}
+      \end{figure}
+      \begin{figure}
+        \vspace{-0.7cm}
+        \includegraphics[scale=0.17]{highspear_celenoBS_smp3.pdf}
+      \end{figure}
+    \end{column}
+  \end{columns}
+  }
+\end{frame}
+
+\begin{frame}[label=current]{Correlation between experimental and predicted coverage profiles}
+  \Wider{
+  \begin{columns}
+      \begin{column}{0.4\linewidth}
+        \begin{figure}
+          \includegraphics[scale=0.15]{spearman_distr_celeNoBS.pdf}
+        \end{figure}
+      \end{column}
+      \begin{column}{0.55\linewidth}
+        \begin{figure}
+          \includegraphics[scale=0.17]{spearman_outliars_celeNoBS.pdf}
+        \end{figure}
+      \end{column}
+    \end{columns}
+    }
+\end{frame}
+
+\section{Model validation}
+
+\begin{frame}{Validation dataset}
+
+\end{frame}
+
 % \begin{frame}{Validating $\Delta$F: consistency between experiments}
 %   \vspace{-0.2cm}
 %   \begin{figure}
