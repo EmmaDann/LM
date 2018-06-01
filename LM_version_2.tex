@@ -35,7 +35,7 @@
 \usebeamercolor{normal text}
 \setbeamersize{text margin left=5mm,text margin right=10mm}
 
-\title{Understanding and controlling coverage biases in single-cell WGBS-seq}
+\title{Understanding and controlling coverage biases in single-cell BS-seq}
 \date{16/04/2018}
 \author{Emma Dann, Master internship}
 
@@ -46,15 +46,6 @@
 % Title slide
 \begin{frame}
  \titlepage
-\end{frame}
-
-
-
-\begin{frame}{Uneven coverage in scBS-seq data}
-  \begin{figure}
-    \includegraphics[scale=0.25, trim={0 0 0 16cm}, clip]{purifiedDNA.png}
-  \end{figure}
-  Mouse intestine, 100 cells
 \end{frame}
 
 
@@ -73,7 +64,7 @@
   \vspace{-2cm}
   \begin{figure}
       \centering
-      \includegraphics[scale=0.25, trim={0 3cm 0 8cm}, clip]{template_primer.png}
+      \includegraphics[scale=0.3, trim={0 3cm 0 8cm}, clip]{template_primer.png}
   \end{figure}
 \begin{figure}
   \includegraphics[scale=0.3]{model_w_labels.png}
@@ -272,16 +263,44 @@
 \end{frame}
 
 \begin{frame}[label=current]{Ongoing: optimizing primer batch for targeted enrichment of regions of interest}
-  Maximizing coverage density of kmers enriched in regions of interest $\longrightarrow$ Log2(FC) between kmer abundance of ROI and genomic kmer abundance (\textbf{Differential evolution algorithm})
+  \vspace{-0.5cm}
+  Maximizing coverage density of kmers enriched in regions of interest (\textbf{Differential evolution algorithm})
+  \onslide<2>{
   \begin{itemize}
     \item CTCF sites
     \begin{figure}
-      \includegraphics[scale=0.1]{CTCF_meth.png}
+      \includegraphics[scale=0.3]{CTCF_meth.png}
     \end{figure}
+    \vspace{-0.3cm}
+    {\Tiny Adapted from Ong et al. CTCF: an architectural protein bridging genome topology and function. Nature Rev. Genet. 2014}
     \item Other TFs affected by methylation (Polycomb, ETS)
-    \begin{figure}
-      \includegraphics[scale=0.1]{CTCF_meth.png}
-    \end{figure}
+    \vspace{-0.3cm}
+    \begin{columns}
+      \begin{column}{0.6\linewidth}
+        \begin{figure}
+          \includegraphics[scale=0.18]{meth_TFs.png}
+        \end{figure}
+      \end{column}
+      \begin{column}{0.4\linewidth}
+        \Tiny{Yin et al. Impact of cytosine methylation on DNA binding specificities of human transcription factors. Science 2017}
+      \end{column}
+    \end{columns}
+  \end{itemize}
+  }
+\end{frame}
+
+\appendix
+
+\begin{frame}{Acknowledgements}
+  \begin{itemize}
+    \item Alexander
+    \item Christoph
+    \item Anna A
+    \item Juan
+    \item Anna vO
+    \item Buys
+    \item Lennart
+    \item AvO lab
   \end{itemize}
 \end{frame}
 
