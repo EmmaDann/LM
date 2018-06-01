@@ -130,7 +130,7 @@
   }
 \end{frame}
 
-\begin{frame}[label=current]{Correlation between experimental and predicted coverage profiles}
+\begin{frame}{Correlation between experimental and predicted coverage profiles}
   \Wider{
   \begin{columns}
       \begin{column}{0.4\linewidth}
@@ -150,7 +150,39 @@
 \section{Model validation}
 
 \begin{frame}{Validation dataset}
+  \begin{center}
+    \begin{tabular}{r|c|c}
+      & no BS & BS \\
+      \hline
+      \textit{C.elegans} & \checkmark & \checkmark \\
+      \textit{D.rerio} & \checkmark & \checkmark \\
+      \textit{M.musculus} & X & \checkmark \\
+      \textit{H.sapiens} & \checkmark & \checkmark \\
+      \hline
+      \% Mapped & 90-96 & 40-63 \\
+    \end{tabular}
+  \end{center}
+  \begin{itemize}
+    \item Controlled genomic kmer abundance with no BS and one pre-amplification
+    \item Consistency of predicted $\Delta$G between species with different genomic kmer abundance
+    \item Correlation of predicted $\Delta$G with tabulated values from calorimetry
+  \end{itemize}
+\end{frame}
 
+\begin{frame}{Model fitting for matching p-t pairs}
+  \begin{figure}
+    \includegraphics[scale=0.3]{model_fitting_zf_noBS_diag.pdf}
+  \end{figure}
+  \footlineextra{D.rerio - no BS}
+\end{frame}
+
+\begin{frame}[label=current]{Consistency of $\Delta$G across genomes}
+  % \Wider{
+  \begin{figure}
+    \includegraphics[scale=0.11]{deltaG_celVShuman_diag.png}
+  \end{figure}
+  Matching p-t pairs
+  % }
 \end{frame}
 
 % \begin{frame}{Validating $\Delta$F: consistency between experiments}

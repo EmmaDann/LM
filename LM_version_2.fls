@@ -387,6 +387,19 @@ INPUT ./pics/spearman_distr_celeNoBS.pdf
 INPUT pics/spearman_outliars_celeNoBS.pdf
 INPUT ./pics/spearman_outliars_celeNoBS.pdf
 INPUT ./pics/spearman_outliars_celeNoBS.pdf
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
+INPUT pics/model_fitting_zf_noBS_diag.pdf
+INPUT ./pics/model_fitting_zf_noBS_diag.pdf
+INPUT ./pics/model_fitting_zf_noBS_diag.pdf
+INPUT pics/deltaG_celVShuman_diag.png
+INPUT ./pics/deltaG_celVShuman_diag.png
+INPUT ./pics/deltaG_celVShuman_diag.png
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi12.tfm
 INPUT frame.pdf
 INPUT ./frame.pdf
 INPUT ./frame.pdf
@@ -397,4 +410,6 @@ OUTPUT LM_version_2.snm
 INPUT LM_version_2.aux
 INPUT ./LM_version_2.out
 INPUT ./LM_version_2.out
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb

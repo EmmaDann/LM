@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.3.10)  1 JUN 2018 10:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.3.10)  1 JUN 2018 11:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -902,43 +902,43 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input line 49.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-) <pics/purifiedDNA.png, id=18, 1243.64626pt x 743.77875pt>
+) <pics/purifiedDNA.png, id=22, 1243.64626pt x 743.77875pt>
 File: pics/purifiedDNA.png Graphic file (type png)
  <use pics/purifiedDNA.png>
 Package pdftex.def Info: pics/purifiedDNA.png used on input line 58.
 (pdftex.def)             Requested size: 310.9108pt x 72.13348pt.
- <pics/wolf_reik_prot_preamp.png, id=21, 929.4725pt x 403.5075pt>
+ <pics/wolf_reik_prot_preamp.png, id=25, 929.4725pt x 403.5075pt>
 File: pics/wolf_reik_prot_preamp.png Graphic file (type png)
  <use pics/wolf_reik_prot_preamp.png>
 Package pdftex.def Info: pics/wolf_reik_prot_preamp.png used on input line 70.
 (pdftex.def)             Requested size: 213.77419pt x 92.80476pt.
- <pics/wga_bias.png, id=22, 6623.74625pt x 3241.10875pt>
+ <pics/wga_bias.png, id=26, 6623.74625pt x 3241.10875pt>
 File: pics/wga_bias.png Graphic file (type png)
  <use pics/wga_bias.png>
 Package pdftex.def Info: pics/wga_bias.png used on input line 70.
 (pdftex.def)             Requested size: 198.70381pt x 97.22906pt.
- <pics/template_primer.png, id=23, 759.83875pt x 46.1725pt>
+ <pics/template_primer.png, id=27, 759.83875pt x 46.1725pt>
 File: pics/template_primer.png Graphic file (type png)
 
 <use pics/template_primer.png>
 Package pdftex.def Info: pics/template_primer.png used on input line 86.
 (pdftex.def)             Requested size: 189.95921pt x -66.70178pt.
- <pics/model_w_labels.png, id=25, 617.30624pt x 321.2pt>
+ <pics/model_w_labels.png, id=29, 617.30624pt x 321.2pt>
 File: pics/model_w_labels.png Graphic file (type png)
  <use pics/model_w_labels.png>
 Package pdftex.def Info: pics/model_w_labels.png used on input line 86.
 (pdftex.def)             Requested size: 185.1933pt x 96.36073pt.
- (./LM_version_2.toc) <pics/highspear_celenoBS_smp1.pdf, id=29, 937.5025pt x 597.23125pt>
+ (./LM_version_2.toc) <pics/highspear_celenoBS_smp1.pdf, id=34, 937.5025pt x 597.23125pt>
 File: pics/highspear_celenoBS_smp1.pdf Graphic file (type pdf)
  <use pics/highspear_celenoBS_smp1.pdf>
 Package pdftex.def Info: pics/highspear_celenoBS_smp1.pdf used on input line 131.
 (pdftex.def)             Requested size: 159.3733pt x 101.52797pt.
- <pics/highspear_celenoBS_smp2.pdf, id=30, 937.5025pt x 597.23125pt>
+ <pics/highspear_celenoBS_smp2.pdf, id=35, 937.5025pt x 597.23125pt>
 File: pics/highspear_celenoBS_smp2.pdf Graphic file (type pdf)
  <use pics/highspear_celenoBS_smp2.pdf>
 Package pdftex.def Info: pics/highspear_celenoBS_smp2.pdf used on input line 131.
 (pdftex.def)             Requested size: 159.3733pt x 101.52797pt.
- <pics/highspear_celenoBS_smp3.pdf, id=31, 937.5025pt x 597.23125pt>
+ <pics/highspear_celenoBS_smp3.pdf, id=36, 937.5025pt x 597.23125pt>
 File: pics/highspear_celenoBS_smp3.pdf Graphic file (type pdf)
  <use pics/highspear_celenoBS_smp3.pdf>
 Package pdftex.def Info: pics/highspear_celenoBS_smp3.pdf used on input line 131.
@@ -947,24 +947,39 @@ File: pics/highspear_celenoBS_smp3.pdf Graphic file (type pdf)
  <use pics/highspear_celenoBS_smp3.pdf>
 Package pdftex.def Info: pics/highspear_celenoBS_smp3.pdf used on input line 131.
 (pdftex.def)             Requested size: 159.3733pt x 101.52797pt.
- <pics/spearman_distr_celeNoBS.pdf, id=32, 937.5025pt x 752.8125pt>
+ <pics/spearman_distr_celeNoBS.pdf, id=37, 937.5025pt x 752.8125pt>
 File: pics/spearman_distr_celeNoBS.pdf Graphic file (type pdf)
  <use pics/spearman_distr_celeNoBS.pdf>
 Package pdftex.def Info: pics/spearman_distr_celeNoBS.pdf used on input line 148.
 (pdftex.def)             Requested size: 140.61931pt x 112.91699pt.
- <pics/spearman_outliars_celeNoBS.pdf, id=33, 1038.36932pt x 844.6506pt>
+ <pics/spearman_outliars_celeNoBS.pdf, id=38, 1038.36932pt x 844.6506pt>
 File: pics/spearman_outliars_celeNoBS.pdf Graphic file (type pdf)
  <use pics/spearman_outliars_celeNoBS.pdf>
 Package pdftex.def Info: pics/spearman_outliars_celeNoBS.pdf used on input line 148.
 (pdftex.def)             Requested size: 176.52045pt x 143.5887pt.
- <frame.pdf, id=34, 1026.83624pt x 769.87625pt>
+ <pics/model_fitting_zf_noBS_diag.pdf, id=39, 849.1725pt x 597.23125pt>
+File: pics/model_fitting_zf_noBS_diag.pdf Graphic file (type pdf)
+ <use pics/model_fitting_zf_noBS_diag.pdf>
+Package pdftex.def Info: pics/model_fitting_zf_noBS_diag.pdf used on input line 177.
+(pdftex.def)             Requested size: 254.75371pt x 179.17075pt.
+ <pics/deltaG_celVShuman_diag.png, id=40, 3006.23125pt x 843.15pt>
+File: pics/deltaG_celVShuman_diag.png Graphic file (type png)
+ <use pics/deltaG_celVShuman_diag.png>
+Package pdftex.def Info: pics/deltaG_celVShuman_diag.png used on input line 186.
+(pdftex.def)             Requested size: 330.68646pt x 92.74678pt.
+
+Overfull \hbox (9.17021pt too wide) in paragraph at lines 186--186
+ [] 
+ []
+
+<frame.pdf, id=41, 1026.83624pt x 769.87625pt>
 File: frame.pdf Graphic file (type pdf)
  <use frame.pdf>
-Package pdftex.def Info: frame.pdf used on input line 148.
+Package pdftex.def Info: frame.pdf used on input line 186.
 (pdftex.def)             Requested size: 364.19255pt x 273.14938pt.
  [1
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./frame.pdf> <./pics/spearman_distr_celeNoBS.pdf> <./pics/spearman_outliars_celeNoBS.pdf>]
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./frame.pdf> <./pics/deltaG_celVShuman_diag.png>]
 \tf@nav=\write7
 \openout7 = `LM_version_2.nav'.
 
@@ -974,27 +989,27 @@ Package pdftex.def Info: frame.pdf used on input line 148.
 \tf@snm=\write9
 \openout9 = `LM_version_2.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 252.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 252.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 291.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 291.
  (./LM_version_2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 252.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 252.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 291.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 291.
 Package rerunfilecheck Info: File `LM_version_2.out' has not changed.
-(rerunfilecheck)             Checksum: D611D693B2D0AB0C4127305062E0426E;85.
+(rerunfilecheck)             Checksum: A4E56A935ACD1E9BC58B2A3453BD47C2;136.
  ) 
 Here is how much of TeX's memory you used:
- 28064 strings out of 492995
- 554869 string characters out of 6132704
- 611700 words of memory out of 5000000
- 31095 multiletter control sequences out of 15000+600000
- 8635 words of font info for 32 fonts, out of 8000000 for 9000
+ 28090 strings out of 492995
+ 555449 string characters out of 6132704
+ 610635 words of memory out of 5000000
+ 31115 multiletter control sequences out of 15000+600000
+ 10641 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,12n,59p,10423b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on LM_version_2.pdf (1 page, 986493 bytes).
+ 56i,12n,59p,10423b,698s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
+Output written on LM_version_2.pdf (1 page, 1239509 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 89 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
