@@ -1,0 +1,97 @@
+% The outertheme defines the head and the footline of each slide.
+
+\mode<presentation>
+
+
+\setbeamertemplate{background}{
+%   \tikz\shade[shading=axis,bottom color=black!0,top color=black!80,shading angle=-0] (0,0) rectangle (\the\paperwidth,\the\paperheight);
+%   \includegraphics[width=\paperwidth,height=\paperheight]{fons2gris}
+% 	\begin{tikzpicture}
+% 	\useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+%   	\fill[color=brown] (0,2) rectangle (\the\paperwidth,\the\paperheight);
+%   	\fill[color=orange] (0,0) rectangle(2.95,1.9);
+%   	\fill[color=blue!50!cyan!80] (3.05,0) rectangle(\the\paperwidth,1.9);
+%   	\ifnum\thepage>1\relax%
+%   		\fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
+%   	\fi
+%   \end{tikzpicture}
+% un altre exemple:
+% \setbeamertemplate{background canvas}{%
+ \ifnum\c@framenumber=1%First slide
+ \includegraphics[width=\paperwidth,height=\paperheight]{title2.pdf}
+ \else %Other slides
+%   \ifnum\c@framenumber=5
+%   \includegraphics[width=\paperwidth,height=\paperheight]{fons6}
+%   \else
+%     \ifnum\c@framenumber=16
+%     \includegraphics[width=\paperwidth,height=\paperheight]{fons6}
+%     \else
+%       \ifnum\c@framenumber=31
+%       \includegraphics[width=\paperwidth,height=\paperheight]{fons6}
+%       \else
+% 	\ifnum\c@framenumber=43
+% 	\includegraphics[width=\paperwidth,height=\paperheight]{fons6}
+% 	\else
+	\includegraphics[width=\paperwidth,height=\paperheight]{frame.pdf}
+% 	\fi
+%       \fi
+%     \fi
+%   \fi
+ \fi%
+}
+
+%Title template
+\defbeamertemplate*{title page}{lunchmeeting}[1][]{
+\begin{minipage}[l]{7.25cm}
+\begin{flushleft}
+\vspace{0cm}
+ \Large{\color[rgb]{0.2,0.5,0.6}{\textbf{\inserttitle}}}
+
+ \vspace{1cm}
+
+ \normalsize{\insertauthor} \\
+ \insertdate
+
+\end{flushleft}
+\end{minipage}
+\vfill
+}
+
+
+% Slide title
+\defbeamertemplate*{frametitle}{lunchmeeting}[1][]
+{
+  \vskip0.5cm
+  \begin{center}
+  \color[rgb]{0.2,0.5,0.6}{\textbf{\insertframetitle}}
+  \end{center}
+}
+
+% \tikz\shade[shading=axis,bottom color=black!10,top color=black,shading angle=-45] (0,0) rectangle (3,3);
+
+% Slide footline
+\defbeamertemplate*{footline}{phd2}{
+  \ifnum\thepage>1
+    \vspace{-2em}
+%     \hspace{2.1em}\color{structure.fg!90!bg}04/11/14\qquad PhD defense\qquad A. Alemany
+%    \insertslidenavigationsymbol\insertframenavigationsymbol
+   \hspace{1em}\color{gray}{\bf \insertsection}~-~\color{gray}\insertsubsection\hfill\insertframenumber\hspace{3.5em}
+%  \begin{beamercolorbox}[wd=\paperwidth,ht=15 pt,leftskip=1.5cm,dp=1ex]{structure.fg}%
+%  \color{black} \insertauthor\qquad\inserttitle \hfill \color{black}\insertdate\par
+%  \end{beamercolorbox}
+    \vspace{0.5em}
+  \fi
+}
+%
+
+% % % % % headline
+% \defbeamertemplate*{headline}{phd2}{
+%   \ifnum\thepage>1
+%     \vspace{0.25em}
+%     \hspace{2.1em}\color{structure.fg!70!bg}{\bf \insertsection}~-~\color{structure.fg!90!bg}\insertsubsection
+% %     \hspace{2.1em}\color{orange}{\bf \insertsection}~-~\color{structure.fg!90!bg}\insertsubsection
+%   \fi
+% }
+
+
+\mode<all>

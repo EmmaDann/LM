@@ -1,0 +1,26 @@
+%exploit the background template to set the titlepage background
+%define a title page template in which the title, the author and the date are actually set.
+
+% An inner theme installs templates that dictate how the following elements are typeset:
+% ∙ Title and part pages.
+% ∙ Itemize environments.
+% ∙ Enumerate environments.
+% ∙ Description environments.
+% ∙ Block environments.
+% ∙ Theorem and proof environments.
+% ∙ Figures and tables.
+% ∙ Footnotes.
+% ∙ Bibliography entries
+
+
+\mode<presentation>
+
+% Items
+\setbeamertemplate{items}[ball] % triangle, circle, square, ball, square
+\setbeamertemplate{sections/subsections in toc}[square]
+
+\setbeamertemplate{navigation symbols}{} % this is to remove navigation symbols
+
+\setbeamertemplate{blocks}[rounded][shadow=true] % this is to define the aspect of blocks
+
+\mode<all>
