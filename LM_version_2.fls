@@ -415,6 +415,9 @@ INPUT ./pics/ppm_G.png
 INPUT pics/bias_profiles_D2.pdf
 INPUT ./pics/bias_profiles_D2.pdf
 INPUT ./pics/bias_profiles_D2.pdf
+INPUT pics/obsVSexp_figure.png
+INPUT ./pics/obsVSexp_figure.png
+INPUT ./pics/obsVSexp_figure.png
 INPUT frame.pdf
 INPUT ./frame.pdf
 INPUT ./frame.pdf
@@ -425,4 +428,6 @@ OUTPUT LM_version_2.snm
 INPUT LM_version_2.aux
 INPUT ./LM_version_2.out
 INPUT ./LM_version_2.out
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
