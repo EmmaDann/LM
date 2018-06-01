@@ -35,7 +35,7 @@
 \usebeamercolor{normal text}
 \setbeamersize{text margin left=5mm,text margin right=10mm}
 
-\title{Sources and potential applications of coverage biases in single-cell WGBS-seq}
+\title{Understanding and controlling coverage biases in single-cell WGBS-seq}
 \date{16/04/2018}
 \author{Emma Dann, Master internship}
 
@@ -50,76 +50,40 @@
 
 
 
-\begin{frame}[label=current]{Uneven coverage in scBS-seq data}
+\begin{frame}{Uneven coverage in scBS-seq data}
   \begin{figure}
     \includegraphics[scale=0.25, trim={0 0 0 16cm}, clip]{purifiedDNA.png}
   \end{figure}
   Mouse intestine, 100 cells
 \end{frame}
 
+
 \begin{frame}{Uneven coverage in scBS-seq data}
   \vspace{-0.2cm}
-	\begin{figure}
-		\includegraphics[scale=0.25, trim={0 0 0 0}, clip]{accessibility_covprofile.pdf}
-	\end{figure}
-  \onslide<2>{
-  \begin{center}
-    \alert{\large{Can we understand (and maybe hack) the source \\
-    of this coverage bias?}}
-  \end{center}
-  }
+  \begin{figure}
+      \includegraphics[scale=0.23]{wolf_reik_prot_preamp.png}
+  \end{figure}
+  \footlineextra{Clark et al. Nature Protocols 2017}
+  \begin{figure}
+      \includegraphics[scale = 0.03]{wga_bias.png}
+  \end{figure}
 \end{frame}
-%
-% \begin{frame}{Post-Bisulfite Adaptor Tagging (scPBAT)}
-%   \begin{figure}
-%       \includegraphics[scale=0.35]{wolf_reik_prot_preamp.png}
-%   \end{figure}
-%   \footlineextra{Clark et al. Nature Protocols 2017}
-% \end{frame}
-% % \begin{frame}{Ruling out other sources of bias}
-% %
-% % \end{frame}
-%
-% \begin{frame}{Random priming as a source of bias}
-%   \vspace{-0.2cm}
-%   \begin{figure}
-%       \includegraphics[scale = 0.18]{ligationVSpriming_chr1_covprofile.pdf}
-%   \end{figure}
-%   \vspace{-0.2cm}
-%   \begin{figure}
-%       \includegraphics[scale = 0.3, trim={0cm 0cm 0cm 9cm}, clip]{biased_usage.pdf}
-%   \end{figure}
-% \end{frame}
-%
-% \begin{frame}{Modelling random hexamer binding}
-%   \begin{figure}
-%       \centering
-%       \includegraphics[scale=0.4]{template_primer.png}
-%   \end{figure}
-%   % \begin{columns}
-%   %     \begin{column}{0.4\linewidth}
-%       \begin{equation*}
-%         p+t \rightleftarrows pt,
-%       \end{equation*}
-%       p = primer\\
-%       t = free template sequence\\
-%       pt = bound template sequence\\
-%     \begin{equation*}
-%       \frac{[pt]}{[p][t]} = \exp\left(\beta\Delta G\right).
-%     \end{equation*}
-%     Binding dependant on:
-%     \begin{itemize}
-%       \item Total number of template sequences $T = t+pt$
-%       \item Binding free energy $\Delta G$
-%     \end{itemize}
-%   %     \end{column}
-%   %     \begin{column}{0.6\linewidth}
-%   %     \begin{figure}
-%   %         \includegraphics[scale=0.25]{occupancy_ab_amp_bigLabels.png}
-%   %     \end{figure}
-%   %     \end{column}
-%   % \end{columns}
-% \end{frame}
+
+\begin{frame}[label=current]{Modelling random hexamer binding}
+  \vspace{-2cm}
+  \begin{figure}
+      \centering
+      \includegraphics[scale=0.25, trim={0 3cm 0 8cm}, clip]{template_primer.png}
+  \end{figure}
+\begin{figure}
+  \includegraphics[scale=0.3]{model_w_labels.png}
+\end{figure}
+\begin{itemize}
+  \item High frequency of mismatching primer-template events
+  \item Lack of tabulated $\Delta$G values for non Watson-Crick base pairing
+  \item Difficult to determine exact genomic kmer abundance for BS converted genome
+\end{itemize}
+\end{frame}
 %
 % \begin{frame}{Modelling random hexamer binding}
 %   \begin{equation*}\label{eq: DeltaG}
