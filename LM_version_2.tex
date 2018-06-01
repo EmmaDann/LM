@@ -176,7 +176,7 @@
   \footlineextra{D.rerio - no BS}
 \end{frame}
 
-\begin{frame}[label=current]{Consistency of $\Delta$G across genomes}
+\begin{frame}{Consistency of $\Delta$G across genomes}
   % \Wider{
   \begin{figure}
     \includegraphics[scale=0.11]{deltaG_celVShuman_diag.png}
@@ -184,6 +184,83 @@
   Matching p-t pairs
   % }
 \end{frame}
+
+\begin{frame}{Consistency of $\Delta$G across genomes}
+  % \Wider{
+  \begin{figure}
+    \includegraphics[scale=0.15]{deltaG_zfVScele_matchingNmismatching_filt200counts.png}
+  \end{figure}
+  % }
+\end{frame}
+
+\begin{frame}{Correlation of $\Delta$G with tabulated values}
+  % \Wider{
+  \begin{figure}
+    \includegraphics[scale=0.23, trim={28cm 0 0 0}, clip]{deltaG_celeVSmfold_filt200counts.pdf}
+  \end{figure}
+  % }
+\end{frame}
+
+\section{Optimizing the primer pool}
+
+\begin{frame}{How does primer concentration affect coverage?}
+  \vspace{-0.8cm}
+  \begin{figure}
+    \includegraphics[scale=0.23]{model_w_labels_primer_mark.png}
+  \end{figure}
+  \only<1>{Primer batch composition}
+  \only<2>{Primer usage}
+  \only<3>{Template usage}
+  \smallskip
+% \Wider{
+  \begin{columns}
+    \begin{column}{0.3\linewidth}
+      \centering{
+      R = random
+      \vspace{-0.2cm}
+      \begin{figure}
+      \only<1>{\includegraphics[scale=0.04, trim={0 0 9cm 7cm}, clip]{ppm_R.png}}
+      \only<2>{\includegraphics[scale=0.13, trim={0 0 3cm 0}, clip]{primer_usage_ppm_R.pdf}}
+      \only<3>{\includegraphics[scale=0.13, trim={0 0 3cm 0}, clip]{template_usage_ppm_R.pdf}}
+      \end{figure}
+      }
+    \end{column}
+    \begin{column}{0.3\linewidth}
+      \centering{
+      T = 45\% T, 5\% G
+      \vspace{-0.2cm}
+      \begin{figure}
+      \only<1>{\includegraphics[scale=0.04, trim={0 0 9cm 7cm}, clip]{ppm_T.png}}
+      \only<2>{\includegraphics[scale=0.13, trim={0 0 3cm 0}, clip]{primer_usage_ppm_T.pdf}}
+      \only<3>{\includegraphics[scale=0.13, trim={0 0 3cm 0}, clip]{template_usage_ppm_T.pdf}}
+      \end{figure}
+      }
+    \end{column}
+    \begin{column}{0.3\linewidth}
+      \centering{
+      G = 45\% G, 5\% T
+      \vspace{-0.2cm}
+      \begin{figure}
+      \only<1>{\includegraphics[scale=0.04, trim={0 0 9cm 7cm}, clip]{ppm_G.png}}
+      \only<2>{\includegraphics[scale=0.13, trim={0 0 3cm 0}, clip]{primer_usage_ppm_G.pdf}}
+      \only<3>{\includegraphics[scale=0.13, trim={0 0 3cm 0}, clip]{template_usage_ppm_G.pdf}}
+      \end{figure}
+      }
+    \end{column}
+  \end{columns}
+  % }
+\end{frame}
+
+\begin{frame}{Altered primer batch: coverage bias}
+  \begin{figure}
+    \includegraphics[scale=0.25]{bias_profiles_D2.pdf}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{}
+
+\end{frame}
+
 
 % \begin{frame}{Validating $\Delta$F: consistency between experiments}
 %   \vspace{-0.2cm}
